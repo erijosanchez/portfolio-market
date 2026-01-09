@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuckDev - Developer Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/app.js" defer></script>
+</head>
+
+<body>
+    <canvas id="particles-canvas"></canvas>
+
+    <nav>
+        <div class="container">
+            <div class="logo">DUCKDEV</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="theme-toggle" onclick="toggleTheme()">🌓</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-grid"></div>
+        <div class="container">
+            <h1>Building Digital<br><span class="gradient-text">Experiences</span></h1>
+            <p>Full-stack developer with 5+ years of experience specializing in modern web applications, scalable
+                architectures, and innovative solutions that drive business growth.</p>
+            <div class="hero-buttons">
+                <a href="#work" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-stack-section">
+        <div class="section-tag" style="text-align: center; margin-bottom: 2rem;">Tech Stack</div>
+        <div class="tech-slider">
+            <div class="tech-track">
+                <div class="tech-item">
+                    <div class="tech-icon">⚛️</div><span>React</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">📘</div><span>TypeScript</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🟢</div><span>Node.js</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🐘</div><span>PHP</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🐍</div><span>Python</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">⚡</div><span>Next.js</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🎨</div><span>Tailwind</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🔷</div><span>Vue.js</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🅰️</div><span>Angular</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🗄️</div><span>MongoDB</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🐬</div><span>MySQL</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🐘</div><span>PostgreSQL</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">☁️</div><span>AWS</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🔥</div><span>Firebase</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🐳</div><span>Docker</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">📱</div><span>React Native</span>
+                </div>
+                <!-- Duplicado para loop infinito -->
+                <div class="tech-item">
+                    <div class="tech-icon">⚛️</div><span>React</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">📘</div><span>TypeScript</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🟢</div><span>Node.js</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🐘</div><span>PHP</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🐍</div><span>Python</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">⚡</div><span>Next.js</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🎨</div><span>Tailwind</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🔷</div><span>Vue.js</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🅰️</div><span>Angular</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🗄️</div><span>MongoDB</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🐬</div><span>MySQL</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🐘</div><span>PostgreSQL</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">☁️</div><span>AWS</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🔥</div><span>Firebase</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🐳</div><span>Docker</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">📱</div><span>React Native</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-header">
+            <div class="section-tag">About Me</div>
+            <h2 class="section-title">Who I Am</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-image"></div>
+            <div class="about-text">
+                <h3>Full-Stack Developer & Tech Enthusiast</h3>
+                <p>With over 5 years of experience in web development, I specialize in creating high-performance
+                    applications that solve real business problems. My passion lies in building scalable solutions using
+                    modern technologies.</p>
+                <p>I've worked with startups and enterprises, delivering projects that have impacted thousands of users.
+                    From concept to deployment, I handle the complete development lifecycle.</p>
+
+                <div class="stats-counter">
+                    <div class="stat-box">
+                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number" data-target="150">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="section-header">
+            <div class="section-tag">Services</div>
+            <h2 class="section-title">What I Offer</h2>
+            <p class="section-description">Professional development services tailored to your business needs</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <span class="service-icon">💻</span>
+                <h3>Web Development</h3>
+                <p>Custom web applications built with React, Next.js, and modern frameworks. Fast, responsive, and
+                    SEO-optimized.</p>
+                <div class="service-price">From $2,000</div>
+            </div>
+            <div class="service-card">
+                <span class="service-icon">📱</span>
+                <h3>Mobile Apps</h3>
+                <p>Cross-platform mobile applications using React Native. One codebase for iOS and Android.</p>
+                <div class="service-price">From $3,500</div>
+            </div>
+            <div class="service-card">
+                <span class="service-icon">🎨</span>
+                <h3>UI/UX Design</h3>
+                <p>Beautiful, intuitive interfaces that users love. From wireframes to high-fidelity prototypes.</p>
+                <div class="service-price">From $1,500</div>
+            </div>
+            <div class="service-card">
+                <span class="service-icon">⚙️</span>
+                <h3>Backend Development</h3>
+                <p>Robust APIs and server architecture with Node.js, Python, or PHP. Scalable and secure.</p>
+                <div class="service-price">From $2,500</div>
+            </div>
+            <div class="service-card">
+                <span class="service-icon">☁️</span>
+                <h3>Cloud Solutions</h3>
+                <p>AWS, Google Cloud, and Azure deployment. CI/CD pipelines and infrastructure management.</p>
+                <div class="service-price">From $1,000</div>
+            </div>
+            <div class="service-card">
+                <span class="service-icon">🔧</span>
+                <h3>Consulting</h3>
+                <p>Technical consulting and code review. Architecture planning and technology recommendations.</p>
+                <div class="service-price">$150/hour</div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 4rem 2rem; background: var(--bg-secondary);">
+        <div style="max-width: 1400px; margin: 0 auto;">
+            <div class="section-header">
+                <div class="section-tag">Process</div>
+                <h2 class="section-title">How I Work</h2>
+                <p class="section-description">A proven process that delivers results</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="process-number">1</div>
+                    <h3>Discovery</h3>
+                    <p>Understanding your goals, requirements, and target audience to plan the perfect solution.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">2</div>
+                    <h3>Design</h3>
+                    <p>Creating wireframes and prototypes to visualize the final product before development.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">3</div>
+                    <h3>Development</h3>
+                    <p>Building your application with clean code, best practices, and regular updates.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">4</div>
+                    <h3>Deploy</h3>
+                    <p>Launching your project to production with monitoring, optimization, and support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work">
+        <div class="section-header">
+            <div class="section-tag">Featured Projects</div>
+            <h2 class="section-title">My Work</h2>
+            <p class="section-description">A selection of projects that showcase my expertise</p>
+        </div>
+
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="mobile">Mobile</button>
+            <button class="filter-btn" data-filter="backend">Backend</button>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project" data-category="web">
+                <div class="project-image">
+                    <div class="project-badge">Featured</div>
+                </div>
+                <div class="project-content">
+                    <h3>Enterprise Dashboard Pro</h3>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                    <p>Real-time analytics platform with custom visualizations and user management.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link primary">Live Demo</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project" data-category="web">
+                <div class="project-image">
+                    <div class="project-badge">Premium</div>
+                </div>
+                <div class="project-content">
+                    <h3>E-Commerce Platform</h3>
+                    <div class="project-tags">
+                        <span class="tag">Next.js</span>
+                        <span class="tag">Stripe</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                    <p>Modern e-commerce solution with payment processing and inventory management.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link primary">Live Demo</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project" data-category="backend">
+                <div class="project-image">
+                    <div class="project-badge">Popular</div>
+                </div>
+                <div class="project-content">
+                    <h3>AI Content Generator</h3>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">OpenAI</span>
+                    </div>
+                    <p>AI-powered content creation tool with natural language processing.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link primary">Live Demo</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project" data-category="mobile">
+                <div class="project-image">
+                    <div class="project-badge">New</div>
+                </div>
+                <div class="project-content">
+                    <h3>Mobile Task Manager</h3>
+                    <div class="project-tags">
+                        <span class="tag">React Native</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">Redux</span>
+                    </div>
+                    <p>Cross-platform mobile app with offline sync and push notifications.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link primary">Live Demo</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-header">
+            <div class="section-tag">Get In Touch</div>
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="section-description">Have a project in mind? Let's discuss how I can help bring your ideas to
+                life.</p>
+        </div>
+
+        <div class="contact-container">
+            <form onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>FUCKDEY</h3>
+                <p>Full-stack developer creating amazing digital experiences. Let's build something great together.</p>
+                <div class="social-links" style="margin-top: 1.5rem;">
+                    <a href="#" class="social-link">𝕏</a>
+                    <a href="#" class="social-link">💼</a>
+                    <a href="#" class="social-link">📧</a>
+                    <a href="#" class="social-link">📷</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Mobile Apps</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                    <li><a href="#">Backend Development</a></li>
+                    <li><a href="#">Consulting</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get updates on new projects and articles.</p>
+                <form class="newsletter-form" style="margin-top: 1rem;" onsubmit="return false;">
+                    <input type="email" placeholder="Your email">
+                    <button>Join</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Fuckdey. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="chat-widget">
+        <button class="chat-toggle" onclick="toggleChat()">💬</button>
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <h3>Soporte en Línea</h3>
+                <div class="chat-status">● En línea</div>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="chat-message bot">¡Hola! ¿En qué puedo ayudarte hoy?</div>
+            </div>
+            <div class="chat-input-container">
+                <input type="text" id="chatInput" placeholder="Escribe tu mensaje...">
+                <button class="chat-send" onclick="sendMessage()">Enviar</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
